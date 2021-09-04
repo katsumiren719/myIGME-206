@@ -15,7 +15,7 @@ class Program
     {
         // declare int counter
         //int i = 0
-        //missing the semicolon ';'
+        //missing the semicolon ';' (Syntax error)
 
         //int i = 0;
         double i = 0;
@@ -23,22 +23,22 @@ class Program
         // changed the datatype of i to double so it doesnt throw error when divide by 0 coz it seemed 
         //  quickest and easiest
         // or the same can be done by try catch blocks 
-        // or can throw DividebyZero Exception
+        // or can throw DividebyZero Exception (Runtime exception )
 
         string allNumbers = null;
 
         // loop through the  1 through 10
         // for (i = 1; i < 10; ++i)
-        // Changed < to <= to include the 10 in the loop
+        // Changed < to <= to include the 10 in the loop (logical error)
         for (i = 1; i <= 10; ++i)
         {
             // declare string to hold all numbers
             //string allNumbers = null;
-            //allNumber string should be declared outside the loop
+            //allNumber string should be declared outside the loop (Logical error)
 
             // output explanation of calculation
             //Console.Write(i + "/" + i - 1 + " = ");
-            //missing brackets in output expression of the calculation
+            //missing brackets in output expression of the calculation (Syntax error)
             Console.Write(i + " / (" + i + "- 1)" + " = ");
 
             // output the calculation of the numbers
@@ -50,12 +50,12 @@ class Program
 
             // increment the counter
             //i = i + 1;
-            //unnecessary function
+            //unnecessary increment (Logical error)
         }
 
         // output all numbers which have been processed
         //Console.WriteLine("These numbers have been processed: " allNumbers);
-        // +  symbol missing before the allNumbers , hence it didnt print the value earlier
+        // +  symbol missing before the allNumbers , hence it didnt print the value earlier (syntax error)
         Console.WriteLine("These numbers have been processed: " + allNumbers);
     }
 }
