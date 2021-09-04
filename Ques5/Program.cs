@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// Program to multiply 4 numbers and display their product 
 namespace Ques5
 {
     class Program
@@ -21,6 +22,7 @@ namespace Ques5
 
             double e = a * b * c * d;
             Console.WriteLine("The product of all 4 numbers are : " + e);
+
         }
     }
 }
