@@ -4,25 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-// Program to multiply 4 numbers and display their product 
 namespace Ques5
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the first number : ");
-            double a = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Enter the second number : ");
-            double b = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Enter the third number : ");
-            double c = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Enter the forth number : ");
-            double d = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Please enter a number with a decimal precision of 2.");
+            string input = Console.ReadLine();
+            double a = (Convert.ToDouble(input) + 55.0);
+            Console.WriteLine(a);
 
-            double e = a * b * c * d;
-            Console.WriteLine("The product of all 4 numbers are : " + e);
 
         }
     }
-}
