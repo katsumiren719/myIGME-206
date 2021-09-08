@@ -10,13 +10,13 @@ namespace PE6_NUMBER_SEARCH
     {
         static void Main(string[] args)
         {
-            Random rand = new Random();
+            Random rand = new Random();  // random number generation
             int rNumber = rand.Next(0, 101);
             Console.WriteLine(rNumber);
 
             int x = 0;
 
-            double searchNumber = 0;
+            double searchNumber = 0; // the temp number to traverse throught 100 numbers
 
             bool element = false;
             while (x <= 8)  // Condition for 8 times attempts
@@ -27,7 +27,7 @@ namespace PE6_NUMBER_SEARCH
                     break;
                 }
 
-                while (!element)
+                while (!element)   // Loop to check for valid input 
                 {
                     Console.Write("Enter your guess: ");
                     searchNumber = Convert.ToDouble(Console.ReadLine());
