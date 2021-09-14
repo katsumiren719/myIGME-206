@@ -8,6 +8,10 @@ namespace PE_8_7
 {
     class Program
     {
+
+        // Author :- RAJ BAROT
+
+        // Purpose :- Console application that accepts a string from the user and outputs a string with the characters in reverse order
         static void Main(string[] args)
         {
             string oldString;
@@ -25,10 +29,4 @@ namespace PE_8_7
         }
     }
 }
-/*
-{
-    char[] array = s.ToCharArray();
-    Array.Reverse(array);
-    return new string(array);
-}*/
 
