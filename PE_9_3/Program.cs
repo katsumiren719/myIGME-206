@@ -9,14 +9,18 @@ namespace PE_9_3
 {
     class Program
     {
-        delegate string delegateReadLine();
+        // Author :- RAJ BAROT
+
+        // Purpose :-  delegate function and use it to impersonate the Console.ReadLine()
+
+        delegate string delegateReadLine();  // declaration
         static void Main(string[] args)
         {
-            WriteLine("Type something :");
-            delegateReadLine readLine = new delegateReadLine(ReadLine);
+            WriteLine("Type something :");      // user imput
+            delegateReadLine readLine = new delegateReadLine(ReadLine);  // initialising readLine with default syntax
             
-            string userInput = readLine();
-            WriteLine($"Your String: {userInput}");
+            string userInput = readLine();  // assigning input string into readLine
+            WriteLine($"Your String: {userInput}");  //print
 
         }
     }
