@@ -1,0 +1,35 @@
+﻿using System;
+
+namespace UT_12
+{
+    class Program
+    {
+        // Author :- RAJ BAROT
+        //  // Purpose :- Console application related to salary raise
+
+        static bool GiveRaise(string name, ref double salary)
+            // Function to increase Salary
+        {
+            if (name == "RAJ")
+            {
+                salary = salary + 19999.99;  // if conditin = true increase salary
+            }
+            return true;
+        }
+        static void Main(string[] args)
+        {
+            string sName;
+            double dSalary = 30000;
+
+            Console.WriteLine("Enter Your Name");
+            sName = Console.ReadLine();
+
+            if (GiveRaise(sName, ref dSalary) == true)   // checking bool condtion, if its true increase salary
+            {
+                Console.WriteLine("Congratulations, your salary got increase");
+                Console.WriteLine("This is your New Salary " + dSalary);
+            }
+
+        }
+    }
+}
