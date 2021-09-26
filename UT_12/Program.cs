@@ -19,8 +19,13 @@ namespace UT_12
             if (name == "RAJ")
             {
                 salary = salary + 19999.99;  // if conditin = true increase salary
+                return true;
             }
-            return true;
+            
+            else
+            {
+                return false;
+            }
         }
         static void Main(string[] args)
         {
@@ -34,6 +39,10 @@ namespace UT_12
             {
                 Console.WriteLine("Congratulations, your salary got increase");
                 Console.WriteLine("This is your New Salary " + dSalary);
+            }
+            else // checking bool condtion, if its false default salary
+            {
+                Console.WriteLine("This is your  Salary " + dSalary);
             }
 
         }
