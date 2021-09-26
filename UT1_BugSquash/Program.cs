@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace UT1_BugSquash
 {
     // Author :- RAJ BAROT
-    // Purpose :- To remove errors and calculate x^y using a recursive function
+    // Purpose :- To remove errors and calculate x^y using a recursive function     
     class Program
     {
         // Calculate x^y for y > 0 using a recursive function

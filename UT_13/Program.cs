@@ -26,12 +26,16 @@ namespace UT_13
             // initialising variables 
             Console.WriteLine("Enter Your Name");
             e1.sName = Console.ReadLine();
-            if (GiveRaise(e1) == true) ; // passing struct object to give raise method
+            if (GiveRaise(e1) == true) // passing struct object to give raise method
             {
                 Console.WriteLine("Congratulations, your salary got increase");
+                e1.dSalary += 19999.99;
                 Console.WriteLine("This is your New Salary " + e1.dSalary);
             }
-            
+            else 
+            {
+                Console.WriteLine("This is your  Salary " + e1.dSalary);
+            }
         }
 
         static bool GiveRaise(employee e)
@@ -39,9 +43,9 @@ namespace UT_13
         {
             if (e.sName == "RAJ")
             {
-                e.dSalary = e.dSalary + 19999.99;  // if conditin = true increase salary
+                return true;
             }
-            return true;
+            else return false;
         }
 
     
