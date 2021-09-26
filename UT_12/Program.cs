@@ -2,10 +2,16 @@
 
 namespace UT_12
 {
+
+    // Author :- RAJ BAROT
+    /* Purpose :- The function should increase the salary by $19,999.99 if name = your name and return true
+    Otherwise it should return false.
+    The main program should congratulate the user if they got a raise, and display their new salary.*/
+
     class Program
     {
         // Author :- RAJ BAROT
-        //  // Purpose :- Console application related to salary raise
+        // Purpose :- Console application related to salary raise
 
         static bool GiveRaise(string name, ref double salary)
             // Function to increase Salary
