@@ -41,7 +41,7 @@ namespace UT_13
         static bool GiveRaise(employee e)
         // Function to increase Salary
         {
-            if (e.sName == "RAJ")
+            if (e.sName.ToUpper() == "RAJ")
             {
                 return true;
             }
