@@ -15,20 +15,19 @@ namespace UT1_BugSquash
         {
             string sNumber;
             int nX;
-            // int nY    Syntax error no ;
+            // int nY    Syntax error no ; <--------
             int nY;
 
             int nAnswer;
 
-            //Console.WriteLine(This program calculates x ^ y.);  
+            //Console.WriteLine(This program calculates x ^ y.);   <--------
             // Syntax Error no "" in writelinefunction
             Console.WriteLine("This program calculates x ^ y");
          
-           
-            do
+         do
             {
                 Console.Write("Enter a whole number for x: ");
-                //Console.ReadLine();
+                //Console.ReadLine(); <--------
                 // we need to initialize sNumber so we add the input from console readline into sNumber
                 // Syntax Error
                 sNumber = Console.ReadLine();
@@ -41,28 +40,41 @@ namespace UT1_BugSquash
                 Console.Write("Enter a positive whole number for y: ");
                 sNumber = Console.ReadLine();
             }
-            while (int.TryParse(sNumber, out nY));
-            //while (int.TryParse(sNumber, out nX));
-            // we took the input of y into nX which makes no sense 
+            while (!int.TryParse(sNumber, out nY));
+            //while (int.TryParse(sNumber, out nX)); <--------
+            // we took the input of y into nX which makes no sense  and we didnt had "!int.TryParse" but "int.TryParse" which takes us in infinite loop of input
             //Logical Error
 
 
             // compute the factorial of the number using a recursive function
 
             nAnswer = Power(nX, nY);
-                        
 
-            Console.WriteLine("{nX}^{nY} = {nAnswer}");
+
+            // Console.WriteLine("{nX}^{nY} = {nAnswer}");  <--------
+            // That line does not print values of x and y but just the text
+            Console.WriteLine("X^Y = "+nAnswer);
         }
 
 
-        int Power(int nBase, int nExponent)
+        static int Power(int nBase, int nExponent)
+            // static keyword was missing in the function 
         {
-            int returnVal = 0;
-            int nextVal = 0;
+            /*int returnVal = 0;  <--------
+            int nextVal = 0;    < -------- */
+            // We dont need these Variables as well
 
             // the base case for exponents is 0 (x^0 = 1)
-            if (nExponent == 0)
+
+            //WE CAN DO ALL THE EENTIRE FUNCTION IN 2 LINES OF CODE
+
+            if (nExponent != 0)
+            {
+                return (nBase * Power(nBase, nExponent - 1));
+            }
+            return 1;
+
+            /*if (nExponent == 0)
             {
                 // return the base case and do not recurse
                 returnVal = 0;
@@ -74,8 +86,14 @@ namespace UT1_BugSquash
 
                 // multiply the base with all subsequent values
                 returnVal = nBase * nextVal;
-            }
-            returnVal;
+            }*/
+
+
+            //returnVal;  <--------
+            // need a return a value since it is int type function 
+            // SYntax Error
+           // return  returnVal;
+            
         }
     }
 }
