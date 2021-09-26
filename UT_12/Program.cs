@@ -16,7 +16,7 @@ namespace UT_12
         static bool GiveRaise(string name, ref double salary)
             // Function to increase Salary
         {
-            if (name == "RAJ")
+            if (name.ToUpper() == "RAJ")
             {
                 salary = salary + 19999.99;  // if conditin = true increase salary
                 return true;
