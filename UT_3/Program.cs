@@ -15,7 +15,7 @@ namespace UT_3
     {
         // Author :- RAJ BAROT
 
-        // Purpose :-  Same Question as PE 9 lol
+        // Purpose :-  Same Question as PE 9-3 lol
 
         delegate string delegateReadLine();  // declaration
         static void Main(string[] args)
