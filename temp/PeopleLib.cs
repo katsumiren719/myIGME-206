@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace PeopleLib
 {
+
+    // Author : Raj Barot
+    // Purpose : Modify the Student class to implement the following schUML.
+    // Create a new PeopleLib.dll to be used by the changed PeopleApp
     public abstract class Person
     {
         public string name;
@@ -79,7 +83,8 @@ namespace PeopleLib
 
     public class Student : Person, IPerson, IStudent
     {
-        public double gpa;
+        public float gpa;    // declaring gpa as the new variable in the diagram
+        public List<string> courseCodes = new List<string>(); // Ensure courseCodes is defined as in question
 
         public static bool operator <(Student s1, Student s2)
         {
