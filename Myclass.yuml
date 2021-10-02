@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 // {type:class}
 // {generate:true}
 // {direction:topDown}
 
 [+MyClass|-myString:string|+MyString:string:w;+GetString():string:v]
 [+MyDerivedClass||+GetString():string:o]
+=======
+// {type:class}
+// {generate:true}
+// {direction:topDown}
+
+[+MyClass|-myString:string|+MyString:string:w;+GetString():string:v]
+[+MyDerivedClass||+GetString():string:o]
+>>>>>>> a4a24b28413007e3db3582ff2db329cc5319a8b4
 [+MyClass]<-[+MyDerivedClass]
