@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yuml", "yuml.csproj", "{50078EB2-19D0-4AE7-8AE4-8EDAC84D61A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50078EB2-19D0-4AE7-8AE4-8EDAC84D61A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50078EB2-19D0-4AE7-8AE4-8EDAC84D61A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50078EB2-19D0-4AE7-8AE4-8EDAC84D61A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50078EB2-19D0-4AE7-8AE4-8EDAC84D61A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D7B203B-C1D6-4DA3-910E-806F9D55B946}
+	EndGlobalSection
+EndGlobal
