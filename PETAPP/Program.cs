@@ -251,7 +251,7 @@ namespace PETAPP
                             {
                                 continue;
                             }
-                            else
+                            else //
                             {
                                 if (thisPet.GetType().Equals(typeof(Cat)))  // //Question 4c
                                 {
