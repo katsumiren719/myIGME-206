@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PETAPP", "PETAPP.csproj", "{690A05FC-6F23-4468-A924-16CB8CCFA59D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{690A05FC-6F23-4468-A924-16CB8CCFA59D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{690A05FC-6F23-4468-A924-16CB8CCFA59D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{690A05FC-6F23-4468-A924-16CB8CCFA59D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{690A05FC-6F23-4468-A924-16CB8CCFA59D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3B12A1E-DCE3-4AA9-BAE1-5BEE6EE89C7F}
+	EndGlobalSection
+EndGlobal
