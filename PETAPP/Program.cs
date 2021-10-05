@@ -245,7 +245,7 @@ namespace PETAPP
                         else  // //Question 4b
                         {
                             
-                            int ranPet = rand.Next(0, pets.Count);
+                            int ranPet = rand.Next(0, pets.Count());
                             thisPet = pets[ranPet];
                             if (thisPet == null)
                             {
