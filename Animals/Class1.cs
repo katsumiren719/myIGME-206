@@ -6,23 +6,25 @@ using System.Threading.Tasks;
 
 namespace Animals
 {
+    // Author : Raj Barot
+    // Purpose : Create 2 classes and an interface. // PE 14
     public abstract class Pets
     {
         private string petname;
 
-        public string petrwmethod
+        public string petrwmethod  // read write property
         {
             get => petname;
             set => petname = value;
         }
     }
 
-    public interface PetEat
+    public interface PetEat  // Interface
     {
         void Eat();
     }
 
-    public class Dog : PetEat
+    public class Dog : PetEat  // Dog class
     {
         public void Eat()
         {
@@ -30,7 +32,7 @@ namespace Animals
         }
     }
 
-    public class Cat : PetEat
+    public class Cat : PetEat  // Cat class
     {
         public void Eat()
         {
