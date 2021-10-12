@@ -148,7 +148,4 @@ namespace CafeLib
         }
     }
 
-
-
-
 }
