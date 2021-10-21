@@ -12,6 +12,7 @@ namespace StructToClass
         public string address;
         }
 
+
     class Program
     {
 
