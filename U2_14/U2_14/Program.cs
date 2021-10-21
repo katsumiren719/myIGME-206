@@ -10,6 +10,16 @@ namespace StructToClass
         public string greeting;
         public DateTime birthdate;
         public string address;
+        public Friend()  // default constructor
+        { 
+        }
+        public Friend(Friend f)  // Constructor passing an object
+        {
+            f.name = name;
+            f.greeting = greeting;
+            f.birthdate = birthdate;
+            f.address = address;
+        }
         }
 
 
@@ -20,7 +30,7 @@ namespace StructToClass
         static void Main(string[] args)
         {
             Friend friend = new Friend();  // Initializing new objects of the class
-            Friend enemy;  // Initializing new objects of the class
+            
 
             // create my friend Charlie Sheen
             friend.name = "Charlie Sheen";
@@ -29,7 +39,8 @@ namespace StructToClass
             friend.address = "123 Any Street, NY NY 12202";
 
             // now he has become my enemy
-            enemy = friend;
+            Friend enemy = new Friend(friend);  // Initializing new objects of the class
+            //enemy = friend;
 
             // set the enemy greeting and address without changing the friend variable
             enemy.greeting = "Sorry Charlie";
