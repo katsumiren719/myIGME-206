@@ -13,6 +13,7 @@ namespace StructToClass
         }
 
 
+
     class Program
     {
 
