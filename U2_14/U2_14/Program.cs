@@ -20,7 +20,7 @@ namespace StructToClass
         static void Main(string[] args)
         {
             Friend friend = new Friend();  // Initializing new objects of the class
-            Friend enemy = new Friend();   // Initializing new objects of the class
+            Friend enemy;  // Initializing new objects of the class
 
             // create my friend Charlie Sheen
             friend.name = "Charlie Sheen";
