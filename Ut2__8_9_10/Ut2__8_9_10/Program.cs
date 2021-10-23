@@ -23,11 +23,13 @@ namespace Ut2__8_9_10
     public interface online
     {
         void gamename();
+        void players();
     }
 
     public interface offline
     {
         void gamename();
+        void levels();
     }
 
     public class Dota2 : Games, online
@@ -38,6 +40,10 @@ namespace Ut2__8_9_10
         {
             Console.WriteLine("The game name is Dota2");
         }
+        public void players()
+        {
+            Console.WriteLine("The game has 10 players");
+        }
 
         public void gameinformation()
         {
@@ -47,18 +53,22 @@ namespace Ut2__8_9_10
 
     public class Mario : Games, offline
     {
-        public string Website;
+        public string gamestatus;
 
         public void gamename()
         {
             Console.WriteLine("The game name is Mario");
         }
-
+        public void levels()
+        {
+            Console.WriteLine("Mario has 20 levels");
+        }
         public void gameinformation()
         {
             Console.WriteLine("this game is offline game from 1990s");
         }
     }
+
 
     class Program
     {
