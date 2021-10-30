@@ -100,6 +100,7 @@ namespace BTree
         {
             // Prime a tree to hold alphabetical information
 
+
             this.richTextBox1.Clear();
 
             BTree node = null;
