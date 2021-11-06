@@ -3,7 +3,7 @@
 
 namespace Pe21
 {
-    class Program
+    class Ezprogram
     {
         // Author : Raj Barot
         // Purpose : To perform  Pe21, implement adjancecy graph and matrix as shown in the diagram
