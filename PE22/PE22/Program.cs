@@ -146,6 +146,7 @@ namespace Dont_Die_Part_2
                         }
 
                         if (!bValid)
+
                         {
                             Console.WriteLine("That isn't a valid direction");
                         }
