@@ -11,22 +11,21 @@ namespace F1
     {
         static void Main(string[] args)
         {
-            //input a string and convert it into case-insensitive
+            
             char[] userChars = Console.ReadLine().ToCharArray();
-            int[] counts = new int[26];
-            StringProperties stringRecord = new StringProperties(userChars, counts);
+            int[] alphabets = new int[26];
+            Function stringRecord = new Function(userChars, alphabets);
 
-            // calculate how many of each letter of the alphabet are in the string 
-            for (int i = 0; i < stringRecord.str.Length; i++)
+            for (int i = 0; i < stringRecord.ustring.Length; i++)
             {
-                if (stringRecord.str[i] >= 'A' && stringRecord.str[i] <= 'Z')
+                if (stringRecord.ustring[i] >= 'A' && stringRecord.ustring[i] <= 'Z')
                 {
-                    stringRecord.str[i] = (char)(stringRecord.str[i] + 'a' - 'A');
+                    stringRecord.ustring[i] = (char)(stringRecord.ustring[i] + 'a' - 'A');
                 }
-                if (stringRecord.str[i] >= 'a' && stringRecord.str[i] <= 'z') stringRecord.num[stringRecord.str[i] - 'a']++;
+                if (stringRecord.ustring[i] >= 'a' && stringRecord.ustring[i] <= 'z') stringRecord.num[stringRecord.ustring[i] - 'a']++;
             }
 
-            //print the result
+        
             for (int i = 0; i < stringRecord.num.Length; i++)
             {
                 Console.WriteLine("{0}: {1}", (char)('a' + i), stringRecord.num[i]);
@@ -34,16 +33,15 @@ namespace F1
         }
 
 
-        // data oriented
-        // soa
-        struct StringProperties
+       
+        struct Function
         {
-            public char[] str;
+            public char[] ustring;
             public int[] num;
 
-            public StringProperties(char[] str, int[] num)
+            public Function(char[] ustring, int[] num)
             {
-                this.str = str;
+                this.ustring = ustring;
                 this.num = num;
             }
         }
