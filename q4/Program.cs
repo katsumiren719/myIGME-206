@@ -26,20 +26,16 @@ namespace q4
             };
             Archive.LicenseKey = "DFGU99 - 1454";
 
-            //save
-            //you can use a path as parameter
-            //default: D:\json.txt
+           
             bool bSuccess = Archive.Save();
             if (bSuccess) Console.WriteLine("save success");
             else Console.WriteLine("save fail");
 
-            //load
-            //you can use a path as parameter
-            //default: D:\json.txt
+            
             Archive = Archive.Load();
             if (Archive == null) Console.WriteLine("load fail");
             else Console.WriteLine("load success");
-            //Console.WriteLine(Archive.Inventory[3]);
+         
         }
     }
 

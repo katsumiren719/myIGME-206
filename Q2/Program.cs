@@ -2,14 +2,15 @@
 
 namespace Q2
 {
+
+    // the program is just an adjacency graph
     class Program
     {
         // Author : Raj Barot
         static void Main(string[] args)
         {
 
-        }
-            
+        }   
      
 
 
